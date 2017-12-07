@@ -36,14 +36,14 @@ public class Practice8DrawArcView extends View {
         //startAngle: 起始角度， sweepAngle扫过的角度; useCenter：是否连接圆心
         paint.setStyle(Paint.Style.FILL);
         //画扇形
-        canvas.drawArc(200, 300, 800, 500, 0,-110, true, paint);
+        canvas.drawArc(200, 300, 800, 500, 0, -110, true, paint);
 
         //画弧形
         canvas.drawArc(200, 300, 800, 500, 30, 100, false, paint);
 
         //画弧线；
         paint.setStyle(Paint.Style.STROKE);
-        canvas.drawArc(200, 300, 800, 500,  -130, -60, false, paint);
+        canvas.drawArc(200, 300, 800, 500, -130, -60, false, paint);
 
 
     }

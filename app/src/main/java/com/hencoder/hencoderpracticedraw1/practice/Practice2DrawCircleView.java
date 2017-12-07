@@ -22,7 +22,6 @@ public class Practice2DrawCircleView extends View {
         super(context, attrs);
         paint = new Paint();
         paint.setAntiAlias(true);
-
     }
 
     public Practice2DrawCircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -37,23 +36,22 @@ public class Practice2DrawCircleView extends View {
 
 //        练习内容：使用 canvas.drawCircle() 方法画圆
 //        一共四个圆：1.实心圆 2.空心圆 3.蓝色实心圆 4.线宽为 20 的空心圆
-          paint.setColor(Color.BLACK);
-          paint.setStyle(Paint.Style.FILL);
-          canvas.drawCircle(200, 150, 100, paint);
+        paint.setColor(Color.BLACK);
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawCircle(200, 150, 100, paint);
 
-          paint.setStyle(Paint.Style.STROKE);
-          paint.setStrokeWidth(2);
-          canvas.drawCircle(500, 150, 100,  paint);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(2);
+        canvas.drawCircle(500, 150, 100, paint);
 
-          paint.setColor(Color.BLUE);
-          paint.setStyle(Paint.Style.FILL);
-          paint.setStrokeWidth(2);
-          canvas.drawCircle(200, 400, 100, paint);
+        paint.setColor(Color.BLUE);
+        paint.setStyle(Paint.Style.FILL);
+        paint.setStrokeWidth(2);
+        canvas.drawCircle(200, 400, 100, paint);
 
-          paint.setColor(Color.BLACK);
-          paint.setStrokeWidth(40);
-          paint.setStyle(Paint.Style.STROKE);
-          canvas.drawCircle(500, 400, 100, paint);
-
+        paint.setColor(Color.BLACK);
+        paint.setStrokeWidth(40);
+        paint.setStyle(Paint.Style.STROKE);
+        canvas.drawCircle(500, 400, 100, paint);
     }
 }

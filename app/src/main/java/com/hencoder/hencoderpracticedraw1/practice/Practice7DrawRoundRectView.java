@@ -27,7 +27,6 @@ public class Practice7DrawRoundRectView extends View {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawRoundRect() 方法画圆角矩形
-
         Paint paint = new Paint();
         paint.setStrokeWidth(2);
         paint.setStyle(Paint.Style.FILL);

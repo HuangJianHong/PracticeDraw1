@@ -11,10 +11,12 @@ import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 
+
 public class Practice1DrawColorView extends View {
 
     private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private Path path = new Path();
+
 
     public Practice1DrawColorView(Context context) {
         super(context);
@@ -30,6 +32,7 @@ public class Practice1DrawColorView extends View {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -38,7 +41,7 @@ public class Practice1DrawColorView extends View {
 //        黄色： Color.YELLOW
         canvas.drawColor(Color.YELLOW);
 
-        path.moveTo(1,1);        //TODO
+        path.moveTo(1, 1);        //TODO
         path.lineTo(100, 100); //从坐标原点开始画，ViewPager切换会出现多画一笔; 所以添加了上面一句moveTo;
 //////        path.rLineTo(200, 0);
         path.moveTo(200, 100);
@@ -50,6 +53,6 @@ public class Practice1DrawColorView extends View {
 //        path.arcTo(100, 100, 300, 300, -90,
 //                90, true);
 
-        canvas.drawPath(path,paint);
+        canvas.drawPath(path, paint);
     }
 }

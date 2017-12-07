@@ -33,6 +33,6 @@ public class Practice3DrawRectView extends View {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawRect() 方法画矩形
-        canvas.drawRect(300,200, 600, 500, paint);
+        canvas.drawRect(300, 200, 600, 500, paint);
     }
 }
